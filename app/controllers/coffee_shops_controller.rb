@@ -16,7 +16,8 @@ class CoffeeShopsController < ApplicationController
       location: params[:location],
       capacity: params[:capacity]
     )
-    render json: @coffee_shop
+    # render json: @coffee_shop
+    redirect_to "http://localhost:3001"
   end
     
   def update
